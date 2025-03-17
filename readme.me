@@ -1,0 +1,81 @@
+# Simulador de Sobrevivência no Titanic 🚢
+
+Este projeto é um simulador de sobrevivência no Titanic, baseado em dados reais dos passageiros do navio. Ele utiliza técnicas de machine learning para prever se um passageiro hipotético sobreviveria ao desastre, com base em características como classe, sexo, idade, número de parentes a bordo, tarifa paga e local de embarque.
+
+Além disso, o projeto inclui visualizações interativas usando a biblioteca `seaborn` para explorar os dados e entender os principais fatores que influenciaram a sobrevivência dos passageiros.
+
+## Funcionalidades
+
+- **Previsão de Sobrevivência**: Insira suas características (classe, sexo, idade, etc.) e o modelo preverá se você sobreviveria ao naufrágio do Titanic.
+- **Visualizações de Dados**: Gráficos interativos mostram a relação entre as variáveis e a sobrevivência, como:
+  - Sobrevivência por sexo e classe.
+  - Distribuição de idade e tarifa por sobrevivência.
+  - Matriz de correlação entre as variáveis.
+- **Análise de Fatores**: O modelo de regressão logística identifica os principais fatores que influenciaram a sobrevivência, como sexo, classe e idade.
+
+## Como Funciona
+
+1. **Pré-processamento dos Dados**: Os dados dos passageiros são limpos e preparados para o treinamento do modelo.
+2. **Treinamento do Modelo**: Um modelo de regressão logística é treinado para prever a sobrevivência com base nas características dos passageiros.
+3. **Simulador**: Uma função permite que você insira suas características e obtenha uma previsão de sobrevivência.
+4. **Visualizações**: Gráficos interativos ajudam a entender os dados e os fatores que influenciaram a sobrevivência.
+
+## Como Usar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/titanic-survival-simulator.git
+   cd titanic-survival-simulator
+   ```
+
+2. Instale as dependências:
+   ```bash
+   pip install pandas scikit-learn seaborn matplotlib
+   ```
+
+3. Execute o código:
+   ```bash
+   python titanic_simulator.py
+   ```
+
+4. Insira suas características no simulador e veja se você sobreviveria ao Titanic!
+
+## Exemplo de Uso
+
+```python
+# Exemplo de uso do simulador
+result = predict_survival(1, 'male', 30, 0, 0, 50, 'S')
+print(result)  # Saída: 'Sobreviveu' ou 'Não sobreviveu'
+```
+
+## Principais Fatores de Sobrevivência
+
+O modelo identifica os seguintes fatores como os mais importantes para a sobrevivência:
+- **Sexo**: Mulheres tiveram uma taxa de sobrevivência maior que os homens.
+- **Classe**: Passageiros da primeira classe tiveram maior probabilidade de sobreviver.
+- **Idade**: Crianças e idosos tiveram maior probabilidade de sobreviver.
+- **Tarifa**: Passageiros que pagaram tarifas mais altas tiveram maior probabilidade de sobreviver.
+
+## Contribuições
+
+Contribuições são bem-vindas! Se você quiser melhorar o modelo, adicionar novas funcionalidades ou corrigir bugs, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+### Links Úteis
+
+- [Dataset do Titanic no Kaggle](https://www.kaggle.com/c/titanic/data)
+- [Documentação do Seaborn](https://seaborn.pydata.org/)
+- [Documentação do Scikit-learn](https://scikit-learn.org/stable/)
+
+---
+
+Espero que este projeto seja útil e interessante para você! Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato. 😊
+
+---
+
+Essa descrição é clara, informativa e convidativa para quem quiser explorar ou contribuir com o projeto. Se precisar de mais ajustes, é só avisar! 😊
